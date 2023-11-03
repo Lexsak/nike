@@ -12,8 +12,8 @@ const Nav = () => {
                 <ul className='flex-1 flex justify-center items-center gap-16 max-lg:hidden'>
                     {navLinks.map((link, index) => {
                         const { href, label } = link;
-                        return <li key={index}>
-                            <a href={href} className='font-montserrat leading-normal text-lg text-slate-gray'>{label}</a>
+                        return <li key={index} className='transition-all hover:scale-125'>
+                            <a href={href} className='font-montserrat leading-normal text-lg text-slate-gray '>{label}</a>
                         </li>
                     })}
                 </ul>
